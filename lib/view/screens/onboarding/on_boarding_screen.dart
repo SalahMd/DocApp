@@ -2,6 +2,7 @@ import 'package:docdoc/app_images.dart';
 import 'package:docdoc/core/constants/text_styles.dart';
 import 'package:docdoc/core/functions/dimenesions.dart';
 import 'package:docdoc/core/helpers/extensions.dart';
+import 'package:docdoc/core/routing/routes.dart';
 import 'package:docdoc/core/theming/colors/colors.dart';
 import 'package:docdoc/view/screens/onboarding/doctor_stack.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,7 @@ class OnboardingScreen extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      context.pushReplacementNamed("/login");
+                      context.pushNamed(Routes.loginScreen);
                     },
                     child: Container(
                       width: Dimensions.screenWidth(context),
