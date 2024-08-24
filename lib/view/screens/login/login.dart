@@ -1,6 +1,7 @@
 import 'package:docdoc/core/constants/text_styles.dart';
 import 'package:docdoc/core/functions/dimenesions.dart';
 import 'package:docdoc/core/helpers/extensions.dart';
+import 'package:docdoc/core/routing/routes.dart';
 import 'package:docdoc/core/theming/colors/colors.dart';
 import 'package:docdoc/view/screens/login/text_fields.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,7 @@ class Login extends StatelessWidget {
               SizedBox(height: 41.h),
               GestureDetector(
                 onTap: () {
-                  context.pushReplacementNamed("/login");
+                  context.pushNamed(Routes.homeScreen);
                 },
                 child: Container(
                   width: Dimensions.screenWidth(context),
